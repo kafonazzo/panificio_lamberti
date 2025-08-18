@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panificio Lamberti - Home</title>
+    <meta name="description" content="Benvenuto al nostro bar: un ambiente accogliente dove gustare colazioni, aperitivi e drink selezionati. Scopri il nostro stile unico.">
+    <meta name="keywords" content="bar, caffetteria, aperitivi, drink, colazioni, cocktail, locale, bevande, lounge, bar moderno, colazione a Genova">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" href="Lamberti.png" type="image/png">
+
+    <!-- TAG CANONICAL -->
+    <link rel="canonical" href="https://www.bottegadelmugugno.it/">
+
+
+    <!-- ✅ AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="cookie-banner">
+    <p>
+        Questo sito utilizza Google Maps che potrebbe installare cookie di terze parti.
+        <a href="privacy.html" target="_blank" rel="noopener">Scopri di più</a>.
+    </p>
+    <button id="accept-cookies">OK</button>
+</div>
+
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <header id="navbar" class="navbar" data-aos="fade-down">
+        <div class="container">
+            <img src="Lamberti.png" alt="Logo" class="logo" />
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menù</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carosello -->
+    <section class="carousel" data-aos="zoom-in">
+        <div class="carousel-container">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29ja3RhaWx8ZW58MHx8MHx8fDA%3D" alt="Pasta italiana">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29ja3RhaWx8ZW58MHx8MHx8fDA%3D" alt="Anatra fritta">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29ja3RhaWx8ZW58MHx8MHx8fDA%3D" alt="Bistecca di manzo">
+            </div>
+        </div>
+        <div class="carousel-overlay-text">Panificio Lamberti</div>
+    </section>
+
+    <!-- Descrizione -->
+    <main>
+        <section class="descrizione">
+            <div class="riga" data-aos="fade-right">
+                <div class="testo">
+                    <h2>Benvenuti al Panificio Lamberti</h2>
+                    <p>
+                        Nel cuore della città, il Panificio Lamberti è il luogo dove ogni giorno il profumo del pane appena sfornato accoglie i nostri clienti.
+                        Pane fragrante, focacce dorate e dolci artigianali ti aspettano per iniziare al meglio la giornata o per concederti una pausa di gusto.
+                    </p>
+                </div>
+            </div>
+            <div class="riga inversa" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJyZWFkfGVufDB8fDB8fHwwba" alt="Pane appena sfornato">
+                <div class="testo">
+                    <h2>Tradizione e Qualità</h2>
+                    <p>
+                        Un ambiente familiare e accogliente, dove ogni prodotto nasce da ricette tradizionali e da ingredienti genuini.
+                        Che tu venga per il pane quotidiano o per una focaccia calda, troverai sempre un sorriso ad accoglierti.
+                    </p>
+                </div>
+            </div>
+            <div class="riga" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJlYWR8ZW58MHx8MHx8fDA%3D" alt="Panettiere al lavoro">
+                <div class="testo">
+                    <h2>La nostra produzione</h2>
+                    <p>
+                        Pane casereccio, integrale, ai cereali, pizze e focacce: ogni giorno sforniamo prodotti freschi per portare sulla tua tavola il sapore autentico della tradizione.
+                        Preparati con passione, come una volta.
+                    </p>
+                </div>
+            </div>
+            <div class="riga inversa" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFrZXJ5fGVufDB8fDB8fHww" alt="Dolci artigianali">
+                <div class="testo">
+                    <h2>I nostri dolci</h2>
+                    <p>
+                        Ogni dolce è una creazione artigianale, preparata con ingredienti freschi e di stagione.
+                        Dai biscotti alle torte, dalle crostate ai lievitati, lasciati conquistare dalla nostra pasticceria artigianale.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sezione Servizi -->
+    <section class="servizi" data-aos="fade-up">
+        <h2>I nostri servizi</h2>
+        <div class="servizi-container">
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="100">
+                <!-- Icona Coperto (utensils) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M127.9 78.4C127.1 70.2 120.2 64 112 64C103.8 64 96.9 70.2 96 78.3L81.9 213.7C80.6 219.7 80 225.8 80 231.9C80 277.8 115.1 315.5 160 319.6L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 319.6C268.9 315.5 304 277.8 304 231.9C304 225.8 303.4 219.7 302.1 213.7L287.9 78.3C287.1 70.2 280.2 64 272 64C263.8 64 256.9 70.2 256.1 78.4L242.5 213.9C241.9 219.6 237.1 224 231.4 224C225.6 224 220.8 219.6 220.2 213.8L207.9 78.6C207.2 70.3 200.3 64 192 64C183.7 64 176.8 70.3 176.1 78.6L163.8 213.8C163.3 219.6 158.4 224 152.6 224C146.8 224 142 219.6 141.5 213.9L127.9 78.4zM512 64C496 64 384 96 384 240L384 352C384 387.3 412.7 416 448 416L480 416L480 544C480 561.7 494.3 576 512 576C529.7 576 544 561.7 544 544L544 96C544 78.3 529.7 64 512 64z"/></svg>
+                <h3>Coperto incluso</h3>
+                <p>Servizio al tavolo con coperto incluso nel prezzo.</p>
+            </div>
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="200">
+                <!-- Icona Bagno (toilet) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M120 64C106.7 64 96 74.7 96 88C96 101.3 106.7 112 120 112L128 112L128 260.9C126.1 262.3 124.2 263.8 122.4 265.3C106.9 278.5 96 296.9 96 319.9C96 366.8 110.3 404 133 432.4C147.2 450.1 164.1 463.7 181.5 474.2L161.6 533.9C158.3 543.7 160 554.4 166 562.7C172 571 181.7 576 192 576L448 576C458.3 576 467.9 571.1 474 562.7C480.1 554.3 481.7 543.6 478.4 533.9L458.6 474.4C476 463.9 492.9 450.3 507.1 432.6C529.8 404.2 544.1 367.1 544.1 320.1C544.1 297 533.2 278.6 517.7 265.5C515.9 264 514 262.5 512.1 261.1L512.1 112.2L520.1 112.2C533.4 112.2 544.1 101.5 544.1 88.2C544.1 74.9 533.3 64 520 64L120 64zM192 144C192 135.2 199.2 128 208 128L240 128C248.8 128 256 135.2 256 144C256 152.8 248.8 160 240 160L208 160C199.2 160 192 152.8 192 144zM320 352C231.6 352 160 337.7 160 320C160 302.3 231.6 288 320 288C408.4 288 480 302.3 480 320C480 337.7 408.4 352 320 352z"/></svg>
+                <h3>Bagno Accessibile</h3>
+                <p>Servizi igienici comodi e adatti anche a persone con disabilità.</p>
+            </div>
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="300">
+                <!-- Icona Wi-Fi (wifi) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 160C229.1 160 146.8 196 86.3 254.6C73.6 266.9 53.3 266.6 41.1 253.9C28.9 241.2 29.1 220.9 41.8 208.7C113.7 138.9 211.9 96 320 96C428.1 96 526.3 138.9 598.3 208.7C611 221 611.3 241.3 599 253.9C586.7 266.5 566.4 266.9 553.8 254.6C493.2 196 410.9 160 320 160zM272 496C272 469.5 293.5 448 320 448C346.5 448 368 469.5 368 496C368 522.5 346.5 544 320 544C293.5 544 272 522.5 272 496zM200 390.2C188.3 403.5 168.1 404.7 154.8 393C141.5 381.3 140.3 361.1 152 347.8C193 301.4 253.1 272 320 272C386.9 272 447 301.4 488 347.8C499.7 361.1 498.4 381.3 485.2 393C472 404.7 451.7 403.4 440 390.2C410.6 356.9 367.8 336 320 336C272.2 336 229.4 356.9 200 390.2z"/></svg>
+                <h3>Wi-Fi Gratuito</h3>
+                <p>Connettiti gratuitamente con il nostro Wi-Fi.</p>
+            </div>
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="400">
+                <!-- Icona Take Away (basket-shopping) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z"/></svg>
+                <h3>Take Away</h3>
+                <p>Prenota e ritira i tuoi piatti preferiti da asporto.</p>
+            </div>
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="500">
+                <!-- Icona Pet Friendly (paw) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M298.5 156.9C312.8 199.8 298.2 243.1 265.9 253.7C233.6 264.3 195.8 238.1 181.5 195.2C167.2 152.3 181.8 109 214.1 98.4C246.4 87.8 284.2 114 298.5 156.9zM164.4 262.6C183.3 295 178.7 332.7 154.2 346.7C129.7 360.7 94.5 345.8 75.7 313.4C56.9 281 61.4 243.3 85.9 229.3C110.4 215.3 145.6 230.2 164.4 262.6zM133.2 465.2C185.6 323.9 278.7 288 320 288C361.3 288 454.4 323.9 506.8 465.2C510.4 474.9 512 485.3 512 495.7L512 497.3C512 523.1 491.1 544 465.3 544C453.8 544 442.4 542.6 431.3 539.8L343.3 517.8C328 514 312 514 296.7 517.8L208.7 539.8C197.6 542.6 186.2 544 174.7 544C148.9 544 128 523.1 128 497.3L128 495.7C128 485.3 129.6 474.9 133.2 465.2zM485.8 346.7C461.3 332.7 456.7 295 475.6 262.6C494.5 230.2 529.6 215.3 554.1 229.3C578.6 243.3 583.2 281 564.3 313.4C545.4 345.8 510.3 360.7 485.8 346.7zM374.1 253.7C341.8 243.1 327.2 199.8 341.5 156.9C355.8 114 393.6 87.8 425.9 98.4C458.2 109 472.8 152.3 458.5 195.2C444.2 238.1 406.4 264.3 374.1 253.7z"/></svg>
+                <h3>Pet Friendly</h3>
+                <p>I tuoi amici a quattro zampe sono i benvenuti!</p>
+            </div>
+            <div class="servizio" data-aos="zoom-in" data-aos-delay="600">
+                <!-- Icona Parcheggio (square-parking) -->
+                <svg class="fa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM288 320L336 320C353.7 320 368 305.7 368 288C368 270.3 353.7 256 336 256L288 256L288 320zM336 384L288 384L288 416C288 433.7 273.7 448 256 448C238.3 448 224 433.7 224 416L224 232C224 209.9 241.9 192 264 192L336 192C389 192 432 235 432 288C432 341 389 384 336 384z"/></svg>
+                <h3>Parcheggio</h3>
+                <p>Parcheggio disponibile vicino al ristorante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mappa -->
+    <section class="mappa" data-aos="fade-up">
+        <h2>Ci trovi qui 📍</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.873418584938!2d8.2599499!3d44.127233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2f7c72ce2e4bb%3A0x6446d6da999f8cba!2sLa%20Bottega%20del%20Mugugno!5e0!3m2!1sit!2sit!4v1753451058925!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Sezione Social -->
+    <section class="social-section" data-aos="fade-up">
+        <h2>I nostri social social</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/panificio_lamberti/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            <a href="https://deliveroo.it/it/menu/alassio/loano/la-bottega-del-mugugno" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAMAAAC7faEHAAAAkFBMVEX////+//8AzLwAzLsAzbwAzL0Ay7wAzbsAy7sAzb0AzL79//8Ay70AzrwAyLgAy7/J8u/e+PVP285x4tc11Me68Ozx/fuU6OPq+fqI5t/L8/Dt+/hZ3NGb5+MAxLIozMBA0sdJ0c1+29hy3dix6Oc60shi2tI2yb/G7+4At6kXwbYvwb8YurSp6uV84twA0bq9wfgzAAADMmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIgeG1sbnM6SXB0YzR4bXBFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgZXhpZjpEYXRlVGltZU9yaWdpbmFsPSIyMDI1LTA2LTA2VDAwOjMyOjE4KzAwOjAwIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlRmlsZVR5cGU9Imh0dHA6Ly9jdi5pcHRjLm9yZy9uZXdzY29kZXMvZGlnaXRhbHNvdXJjZXR5cGUvY29tcG9zaXRlV2l0aFRyYWluZWRBbGdvcml0aG1pY01lZGlhIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlVHlwZT0iaHR0cDovL2N2LmlwdGMub3JnL25ld3Njb2Rlcy9kaWdpdGFsc291cmNldHlwZS9jb21wb3NpdGVXaXRoVHJhaW5lZEFsZ29yaXRobWljTWVkaWEiIHBob3Rvc2hvcDpDcmVkaXQ9IkVkaXRlZCB3aXRoIEdvb2dsZSBBSSIgcGhvdG9zaG9wOkRhdGVDcmVhdGVkPSIyMDI1LTA2LTA2VDAwOjMyOjE4KzAwOjAwIi8+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgPD94cGFja2V0IGVuZD0idyI/PizGT8kAAAM2SURBVDiNbZSLdiI3DIaFLPmG7QEWJiQkTNok0+4lu+//dv1lQ9vTUx9gZvA3uvySRd5ndqGGsVhCcD7GCcuX4pxPteLfSJPn4MJ/lnMRMBZzgA0niSZJAF0QxqZjFocnx14zezznpEmYM03K2PQg2PYFlnCvvmFFGFKQvkzml/FmVDPjREvxyqru8OVwRNQupqw+GiceqDN/MCwJr8fA7kRE8373kESUvaepuM45RIlsnWt6PMLOjvo6axAfWan4WErBG2DEpcPjaT/PRxf3tNlut/SEEG0bfh2yZ2UkHI6XYeU5uAttsOgEDvaYJu5hCb7VTbNRG3q5Lrgz7qXBnoffiSOSEKSa4BnejHy6fmwH9xigbxRwaqqbdJA+nLAJ9NJeu9sNrQGuWIrF59jFiKqifI+0tV1ajEMadHBStUzZdAYRDUadD5YluN9W4+D66KpITJaHRmgDEDUOae5R0e9v4zpPUqFGsn7pECogqYb2NOR4fxiG91NCgYZ+EMYywVsi7XNwZ5MZ152HuVIE8RVG4awHWItc37odVGLTy/HeqqIPRGiK0fuikkIsrV1fO7fpcJc55Yx6JCpI1heHbls+1ofTKNzmph79bEmnUnRwrizPD7sz3RjTelSD1qbWBZpJEV57JrpD5z9Wa6ez5UH02jKseeiMhpJ2oJEmPn9+/TbT/P3HmYw7xgxwQt8Xa7w8k6XYHb6jQzuHhy24UnKZwHWVu7xbq9RYc28/2mtBfCChH+NIXl9Ggn/Hf7u+IY1cVJFv9kkUiXR7fbs3Qs/psiC8nMEJFZQrxWVLXd6B300/NkUaHbT6opvj5eb4X4vmJSoCBJfKOOcO9ad7VJubYSua9iQGB2so3fHw83P/D2t+P4zzqtlbvh75opdja9+mZUX57uLsEFHyjEQgDmWbVjhwOC8abfiUZf3c2/l8jskmBoQpSSnjYHBCy9f76LNBlV/XFdW3qQT52PSzmSJGSP/Fea34q10BI1sMVfRBAgcTwUCpNnNB44Izhsml6Hjoool9ouTModTbQqSMkVxFbcKZZ+O4UnX1fxfetNEHGB8x7hdWj6z+qhX3g+suDLbqcvsLSi0vFEFW8SoAAAAASUVORK5CYII=" alt="Deliveroo">
+            </a>
+            <a href="https://www.tripadvisor.it/Restaurant_Review-g194801-d4505905-Reviews-Bottega_del_Buon_Caffe-Loano_Italian_Riviera_Liguria.html" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAMAAAC7faEHAAAAn1BMVEUAAAAy4aEz4aEz4KEy4KEy4aAy4aIz4KIz4aAx4aEy4KA036M04aUDDgo57q015qgIKB1B+LY33aQ/9LYAAAIxyZILLiE16akpvoohm3AbfFgZaEoYY0cYeFcYc1Qv0JUCEgwNRzISVz0y1J4lpXoKHBgMOSwZZ04NQDEIIRoYb1QMOigLMiY47LEpr4Eklm4jjGgigmMURzg+9rsUUzyXlVklAAADMmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyIgeG1sbnM6SXB0YzR4bXBFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgZXhpZjpEYXRlVGltZU9yaWdpbmFsPSIyMDI1LTA2LTA2VDAxOjA2OjEzKzAwOjAwIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlRmlsZVR5cGU9Imh0dHA6Ly9jdi5pcHRjLm9yZy9uZXdzY29kZXMvZGlnaXRhbHNvdXJjZXR5cGUvY29tcG9zaXRlV2l0aFRyYWluZWRBbGdvcml0aG1pY01lZGlhIiBJcHRjNHhtcEV4dDpEaWdpdGFsU291cmNlVHlwZT0iaHR0cDovL2N2LmlwdGMub3JnL25ld3Njb2Rlcy9kaWdpdGFsc291cmNldHlwZS9jb21wb3NpdGVXaXRoVHJhaW5lZEFsZ29yaXRobWljTWVkaWEiIHBob3Rvc2hvcDpDcmVkaXQ9IkVkaXRlZCB3aXRoIEdvb2dsZSBBSSIgcGhvdG9zaG9wOkRhdGVDcmVhdGVkPSIyMDI1LTA2LTA2VDAxOjA2OjEzKzAwOjAwIi8+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgPD94cGFja2V0IGVuZD0idyI/PnViV8YAAAONSURBVDiNPZSJeuIgFIVZL2ExaDKKtlZrY63TcelU3//Z5lxihy8b8HMXcjnCKkkhkFTWKu1MsME5by0F7chaK23QlCgK55zWjW10aBrV4MMqfmhwDbgGw9q5KJIzxoUQpFKqUVorY2FTKR2Cbpx2QaOBAxaC00HZRgWNS1cmGKlAjlxw1a/RRgd40IrAwD3iCEbBJSLSHFiIQmuJdSZIGaSWBq8GwdeL7cGXi8GScEESsU2OUwZjQCB16a0nKUlrA4NWCqescdFxIwP/QWlsEJEhIumcCuAiKRHhzJmKeX64mJJz0ntPGMFSnvLg4gNz7D6XtrTcCmNubOwNHH/VZ8qtW66entfPT6tlbHOCZSxObErU0BK3XOYvC/HTppt54VHCDSsiAaTtNuc8bF6FmEx3b29vu+kEny9DOp+HIcFxFOwy798Xh8M7rKy3uUZXhg/03g/Hw+89zMWuxpfK5uFtsnZtybntPiePkc/uwdXo8oEh+BV/tq0vwwlfr4wezzW+TnQRCeXLREyv27hcC3GIJQJbL7vhOhWTS8F2jpzL3VQcuxlavxLiZfaEae7NuqOYdj9cdO1VvA59+vq49Le/4jdW/e3z5eMr9cOr+DrD7ZhHexefs7RDOHue+RbvXb9H7zvdPsUOXIycB5WFWM14Qhz78zdeu7Y9il9YdtuLU8b28f7hf53AXZjb9ecjJ922u5FbiRPnWzlX7mI9a5Erwh94cybbGXZA3PPtQ9zP6acO2pWYzGfla7Ns+3HHX2btcrPK/XwiroVIMReDj1Ox2PJGtF+P37Dq+9ttNl+IRcykFddBdJQR3PvTfLh8/6+X+2VYviCGSyEcwpoviiyvuAr4R+2e8fi4P3qvq+JwRlytP63JlWEzxdTpWs478ed8vp4mvybTzbZVY0mLVIWDK76bL1FVOcf9tqQ2zZfz2Bb5KH5wVD3jOOSSWYFKsTybc4HUKOJTwfbIGgNpsdCMZjy7WlkMNFCwBiN8vHQQSZLHcGBtsra+GgWxaWofAwSqUeCs91JhLy2bw4kNrAuwpFhlPHPoQK8wKRmuqgiFaaxhQ6qKjAFH6DMHBOeffXppDEl8SB+whnxgHRo57WHdGAiFQcQheGvYNDeoGHSDYIqQL0GhWU5wQX4cRwFhIW/cqByUnPcisd5CBKmmY1nLFDaNxotRKAJRPR86VtUctekhNnjzAao93P8AHIpCtpZWrpsAAAAASUVORK5CYII=" alt="Tripadvisor">
+            </a>
+        </div>
+    </section>
+    <a href="tel:+39123456789" class="call-now">📞 Chiama ora</a>
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p>&copy; 2025 Panificio Lamberti - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+</div>
+
+<!-- ✅ AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // durata animazione in ms
+        once: true      // l'animazione avviene solo una volta
+    });
+</script>
+
+</body>
+</html>

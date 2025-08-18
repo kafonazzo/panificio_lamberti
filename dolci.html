@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>I nostri dolci</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" href="logo.jpg" type="image/png">
+
+    <!-- TAG CANONICAL -->
+    <link rel="canonical" href="https://www.bottegadelmugugno.it/dolci.html">
+
+
+    <!-- ✅ AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <header id="navbar" class="navbar" data-aos="fade-down">
+        <div class="container">
+            <img src="logo.jpg" alt="Logo" class="logo" />
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menù</a>
+                <a href="contatti.html">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dolce del momento -->
+    <!-- Dolce del momento -->
+    <section class="dolce-momento" data-aos="fade-up">
+        <div class="dolce-momento-content">
+            <h2>Il Dolce del Momento: Bombolone Kinder Bueno</h2>
+            <p>
+                Un connubio perfetto tra soffice pasta fritta e una farcitura cremosa al Kinder Bueno.
+                Solo per un periodo limitato!
+            </p>
+            <img src="bombolone_kinder_bueno.jpeg" alt="Bombolone Kinder Bueno">
+        </div>
+    </section>
+
+    <!-- Sezione sulla pasticcera -->
+    <section class="pasticcera" data-aos="fade-up">
+        <div class="pasticcera-content">
+            <h2>La nostra pasticcera</h2>
+            <p>Dietro ogni dolce c’è la mano esperta della nostra pasticcera, Eleonora.</p>
+            <p>Con passione e precisione trasforma ingredienti semplici in creazioni indimenticabili.</p>
+            <p>Ogni dessert è fatto a mano, con cura artigianale e ingredienti selezionati.</p>
+            <p>Dalla tradizione siciliana alle rivisitazioni moderne, il suo tocco è unico.</p>
+            <p>Assaporare un dolce significa conoscere un pezzo della sua storia.</p>
+        </div>
+    </section>
+
+    <!-- Titolo Galleria -->
+    <div class="titolo-galleria" data-aos="fade-up">
+        <h2>I nostri altri dolci!</h2>
+    </div>
+
+    <!-- Galleria dolci -->
+    <section class="galleria-dolci" data-aos="fade-up" data-aos-delay="100">
+        <div class="dolce-card">
+            <img src="bombolone_snickers.jpeg" alt="Bombolone Snickers">
+            <h3>Bombolone Snickers</h3>
+            <p>Soffice bombolone fritto ripieno con crema Snickers fatta in casa.</p>
+
+        </div>
+
+        <div class="dolce-card">
+            <img src="torta2.jpeg" alt="Torta Frutti di Bosco">
+            <h3>Torta Frutti di Bosco</h3>
+            <p>Base morbida, crema chantilly e frutti di bosco freschi.</p>
+
+        </div>
+
+        <div class="dolce-card">
+            <img src="torta_comple1.jpeg" alt="Torta di Compleanno">
+            <h3>Torta di Compleanno</h3>
+            <p>Pan di Spagna a strati, farcitura a scelta e decorazioni personalizzate.</p>
+            <!-- <span class="prezzo">€5,00</span>-->
+         </div>
+
+         <div class="dolce-card">
+             <img src="torta_m.jpeg" alt="Torta Meringata al Cioccolato">
+             <h3>Torta con frutta</h3>
+             <p>Torta al cioccolato bianco con base croccante e tanta varietà di frutta.</p>
+
+         </div>
+     </section>
+     <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p>&copy; 2025 Bar Bottega Del Mugugno - Tutti i diritti riservati - Realizzato da Fabio Merello</p>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+</div>
+
+<!-- ✅ AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // durata animazione in ms
+        once: true      // l'animazione avviene solo una volta
+    });
+</script>
+
+</body>
+</html>
